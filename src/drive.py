@@ -82,9 +82,9 @@ def telemetry(sid, data):
         except Exception as e:
             print(e)
 
-        # save frame in runRecordings directory sibling of src
+        # save frame in testRunRecordings directory sibling of src
         if args.image_folder != '':
-            this_image_folder = '../runRecordings/'+args.image_folder
+            this_image_folder = '../testRunRecordings/'+args.image_folder
             timestamp = datetime.utcnow().strftime('%Y_%m_%d_%H_%M_%S_%f')[:-3]
             image_filename = os.path.join(this_image_folder, timestamp)
             img = Image.fromarray(image[0]) #to convert it back to PIL image
@@ -136,7 +136,7 @@ if __name__ == '__main__':
     model = load_model(args.model)
 
     if args.image_folder != '':
-        this_image_folder = '../runRecordings/'+args.image_folder
+        this_image_folder = '../testRunRecordings/'+args.image_folder
         print("Creating image folder at {}".format(this_image_folder))
         if not os.path.exists(this_image_folder):
             os.makedirs(this_image_folder)
