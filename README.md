@@ -27,9 +27,10 @@ Certain subtle issues and analysis of the data is discussed in this [blog post](
   This will run the script in the default mode, although script is capable of accepting various parameters in arguement check the source code to figure out or do `python model.py --help`
   * To test the model built and trained using the data, open the simulator in the autonomous mode and run the `drive.py` as follows, it can also accept an arguement which will represent the name of the directory present inside the **testRunRecording** to record the images from the drive (by default script is written to read the models stored in **models** directory and to **not save** the drives of the model)
   ```
-  python drive.py testDrive1 # for recording the drive
-  python drive.py # for not recording the drive
+  python drive.py ../models/model-xxx.h5 testDrive1 # for recording the drive
+  python drive.py ../models/model-xxx.h5 # for not recording the drive
   ```
+  model-xxx.h5 represents the model stored in **models** directory 
 ## Notes and Results
 * The **data** directory present in the repo is the truncated ones because of the size restriction of the github, but it gives an idea about the format in which images are stored (well maybe a more memory efficient way would be to read the source code)
 * The 2 models in the **models** are from the same data set, one from the starting epoch and the other from the last epoch. They serve as a very good example of our model improvoing as one can clearly see the poor performance for the first epoch model (car sinks in water for most of the time :P) and the model obtained after the last epoch can successfully drive the car completing laps.
