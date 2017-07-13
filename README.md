@@ -11,5 +11,6 @@ Certain subtle issues and analysis of the data is discussed in this [blog post](
 
 ## Usage
 * One has to download the simulator mentioned above by **Udacity**, however if this repository is cloned one should find these simulator in ```beta_simulator_linux``` directory (only for linux).
-  * To open the simulator shift to the directory containing the simulator
+  * To open the simulator shift to the directory containing the simulator and do ```sudo chmod +x beta_simulator.*``` (to make them executables). then open the simulator by  ```./beta_simulator.x86_64```
+  * Simulator allows for the two mode the `Traing Mode` and `Autonomous Mode` and offeres to tracks. Training mode can be used to collect the data as one drives the car manually. (*My python scripts by default look for the data in the* **data** *directory, so it is suggest to select that directory for storing the data, else one might pass the data directory manually while training the model, check the source code to figure out how.*). Autonomous mode can be used to check the trained model, to see how the model is performing.
 * Life is alot easier if one is using [Anaconda](https://www.continuum.io/downloads) which is a great data science ecosystem for python which also happens to manage virtual environments. I assume that *Anaconda* is installed in the system.(**Note**: One can also set up the virtual environment manually and install every dependency mentioned in the *yml* file manually using [pip](https://pypi.python.org/pypi/pip))
