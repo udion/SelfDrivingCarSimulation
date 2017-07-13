@@ -34,7 +34,7 @@ Certain subtle issues and analysis of the data is discussed in this [blog post](
 ## Notes and Results
 * The **data** directory present in the repo is the truncated ones because of the size restriction of the github, but it gives an idea about the format in which images are stored (well maybe a more memory efficient way would be to read the source code)
 * The 2 models in the **models** are from the same data set, one from the starting epoch and the other from the last epoch. They serve as a very good example of our model improvoing as one can clearly see the poor performance for the first epoch model (car sinks in water for most of the time :P) and the model obtained after the last epoch can successfully drive the car completing laps.
-  * result visual for model just after the first epoch (notice how it goes in water in the end)
+  * result visual for model just after the first epoch (notice how it goes in water at the end)
 
   ![results for model-000.h5](https://github.com/udion/SelfDrivingCar_CNN/blob/master/results/summary_model-000.gif)
 
