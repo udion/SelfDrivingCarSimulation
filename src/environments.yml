@@ -1,4 +1,4 @@
-name: car-behavioral-cloning
+name: SelfDrivingCar_CNN
 channels:
     - https://conda.anaconda.org/menpo
     - conda-forge
