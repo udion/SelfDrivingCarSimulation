@@ -8,3 +8,8 @@ The model implemented for the self driving car in **src** is the model proposed 
 
 ## Some Analysis
 Certain subtle issues and analysis of the data is discussed in this [blog post](https://udionblog.wordpress.com)(coming soon) by me.
+
+## Usage
+* One has to download the simulator mentioned above by **Udacity**, however if this repository is cloned one should find these simulator in ```beta_simulator_linux``` directory (only for linux).
+  * To open the simulator shift to the directory containing the simulator
+* Life is alot easier if one is using [Anaconda](https://www.continuum.io/downloads) which is a great data science ecosystem for python which also happens to manage virtual environments. I assume that *Anaconda* is installed in the system.(**Note**: One can also set up the virtual environment manually and install every dependency mentioned in the *yml* file manually using [pip](https://pypi.python.org/pypi/pip))
